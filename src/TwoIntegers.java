@@ -43,4 +43,25 @@ public class TwoIntegers
 		arithmetic = "The quotient of integer1 and integer2 is" + " " + quotient;
 		return arithmetic;
 	}
+	//end of 2.15
+	public String comparison()
+	{
+		String str = "";
+		{
+			if(integer1 < integer2)
+			{
+				System.out.println(integer2 + " " + "is larger");
+			}
+			else
+			{
+				System.out.println("These numbers are equal");
+			}
+		}
+		return str;
+	}
+	//end of 2.16
+	public boolean /*isEven*/
+	{
+		
+	}
 }
