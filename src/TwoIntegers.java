@@ -50,18 +50,42 @@ public class TwoIntegers
 		{
 			if(integer1 < integer2)
 			{
-				System.out.println(integer2 + " " + "is larger");
+				str = integer2 + " " + "is larger";
 			}
 			else
 			{
-				System.out.println("These numbers are equal");
+				str = "These numbers are equal";
 			}
 		}
 		return str;
 	}
 	//end of 2.16
-	public boolean /*isEven*/
+	public boolean isOddOrEven()
 	{
-		
+		boolean isOddOrEven = true;
+		if(integer1%2 == 0)
+		{
+			isOddOrEven = true;
+		}
+		else
+		{
+			isOddOrEven = false;
+		}
+		return isOddOrEven;
 	}
+	//end of 2.25
+	public boolean isMultiple()
+	{
+		boolean isMultiple = true;
+		if(integer1/2 == 0)
+		{
+			isMultiple = true;
+		}
+		else
+		{
+			isMultiple = false;
+		}
+		return isMultiple;
+	}
+	//end of 2.26
 }
