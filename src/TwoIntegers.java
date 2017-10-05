@@ -3,7 +3,7 @@ public class TwoIntegers
 {
 	private int integer1;
 	private int integer2;
-	
+
 	public TwoIntegers()
 	{
 		this.integer1 = 0;
@@ -37,25 +37,27 @@ public class TwoIntegers
 		int difference = integer1 - integer2;
 		int product = integer1 * integer2;
 		int quotient = integer1 / integer2;
-		arithmetic = "The sum of integer1 and integer2 is" + " " + sum;
-		arithmetic = "The difference of integer1 and integer2 is" + " " + difference;
-		arithmetic = "The product of integer1 and integer2 is" + " " + product;
-		arithmetic = "The quotient of integer1 and integer2 is" + " " + quotient;
+		arithmetic = "The sum of integer1 and integer2 is" + " " + sum + "\n";
+		arithmetic += "The difference of integer1 and integer2 is" + " " + difference + "\n";
+		arithmetic += "The product of integer1 and integer2 is" + " " + product + "\n";
+		arithmetic += "The quotient of integer1 and integer2 is" + " " + quotient + "\n";
 		return arithmetic;
 	}
 	//end of 2.15
 	public String comparison()
 	{
 		String str = "";
+		if(integer1 < integer2)
 		{
-			if(integer1 < integer2)
-			{
-				str = integer2 + " " + "is larger";
-			}
-			else
-			{
-				str = "These numbers are equal";
-			}
+			str = integer2 + " is larger";
+		}
+		else if(integer1 == integer2)
+		{
+			str = "These numbers are equal";
+		}
+		else 
+		{
+			str = integer1 + " is larger";
 		}
 		return str;
 	}
